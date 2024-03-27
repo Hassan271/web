@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+
+  <script>
+    // function1 
+    function fun1() {
+      document.getElementById("id5").innerHTML = "Statement Changed";
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <h2>JavaScript h2 </h2>
+
+  <p id="id1">JavaScript Button.</p>
+
+  <button type="button" onclick='document.getElementById("id1").innerHTML = "Clicked on Button"'>
+    Click Here!</button>
+
+  <!-- Bulb ON/OFF ---------------------------------------- -->
+
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+  <button onclick="document.getElementById('OFF-Bulb').src='/images/bulb-on.gif'  ">Turn on the light</button>
+
+  <img id="OFF-Bulb" src="/images/bulb-off.gif" style="width:100px">
+
+  <button onclick="document.getElementById('OFF-Bulb').src='/images/bulb-off.gif'">Turn off the light</button>
+
+
+  <!-- Font Style =============================== -->
+
+  <br><br>
+  <p>-------------------------------------------------------------------------------</p>
+  <p id="id2">Font size change on click </p>
+
+  <button type="button" onclick="document.getElementById('id2').style.fontSize='35px'   ">
+    Click Here to Change Font Size</button>
+
+
+  <!-- Hidden Element =============================== -->
+
+  <br><br>
+  <p>-------------------------------------------------------------------------------</p>
+
+  <h3>Whats is the Capital of Pakistan ?</h3>
+  <p id="id4" style="display: none;">Pakistan</p>
+
+  <button type="button" onclick="document.getElementById('id4').style.display='block'   ">
+    Answer</button>
+
+
+  <p>-------------------------------------------------------------------------------</p>
+  <h2>innerHTML java script </h2>
+
+  <h3>Function 1</h3>
+
+  <p id="id5">Statement one </p>
+
+  <button type="button" onclick="fun1()">
+    Click Here to change the Above statement</button>
+
+
+  <p> inner Body Java Script -------------------------------------------------------------------------------</p>
+
+  <p id="id6">Origional Statement </p>
+
+  <button type="button" onclick="fun2()">
+    Click Here to change the Above statement</button>
+
+
+
+
+  <!-- inner Body HTML-------------------------------------------------------- -->
+  <script>
+    // function1 
+    function fun2() {
+      document.getElementById("id6").innerHTML = "Statement Changed";
+    }
+  </script>
+
+
+  <!-- Outer Body HTML-------------------------------------------------------- -->
+  <h3>Outer Java Script</h3>
+  <p id="id7">Origional Statement </p>
+
+  <button type="button" onclick="fun3()">
+    Click Here to change the Above statement</button>
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Sum--------------------------------------------------------------------- -->
+  <h3>Sum of 5 + 7 =
+    <p id="id8"> </p>
+  </h3>
+
+  <h3>Sum of 8+2 =
+    <script>
+      document.write(8 + 2);
+    </script>
+  </h3>
+
+  <h3>Click Button</h3>
+  <button type="button" onclick="document.write(10+9)">Sum of 10 + 9 =</button>
+
+  <h3>windows.alert</h3>
+  <button type="button" onclick="window.alert(10+9)">Sum of 10 + 9 =</button>
+
+  <h3>console.log</h3>
+  <button type="button" onclick="console.log(10+9)">Sum of 10 + 9 =</button>
+
+  <h3>window.print</h3>
+  <button type="button" onclick="window.print()">Print this statement</button>
+
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Statements --------------------------------------------------------------------- -->
+  <h3 id="id9"></h3>
+  <br>
+
+  Click the Button below to see the names of students.. <br>
+  <button type="button" onclick="fun3()"> Click Here </button>
+  <p id="id11"></p>
+  <p id="id12"></p>
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Math --------------------------------------------------------------------- -->
+
+  <h3>Power of 5 is = </h3>
+  <h3 id="id16"></h3>
+  <br>
+
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Strings  --------------------------------------------------------------------- -->
+  <p id="id17"></p>
+
+  <h2 id="id18"></h2>
+
+  <h2 id="id19"></h2>
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Replace  -->
+  <button onclick="fun4()">Replace</button>
+  <p id="id20">microsoft</p>
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Replace all  -->
+  <button onclick="fun5()">Replace</button>
+  <p id="id21">Replace all</p>
+
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- UPPER/Lower case  -->
+  <p id="id22">make all letters into Lower case by click on the button below:</p>
+  <button onclick="fun6()">UPPER case</button>
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Search  -->
+  <p id="id23">The quick brown fox jumps over a lazy dog.</p>
+  <button onclick="fun6()">Search index</button>
+
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Match all -->
+  <h4>I love cats. Cats are very easy to love. Cats are very popular.</h4>
+  <p id="id24"></p>
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Adding  -->
+  <h2 id="id25"></h2>
+
+  <p>--------------------------------------------------------------------------------------</p>
+  <!-- Arrays   -->
+  <h2 id="id26"></h2>
+  <button onclick="fun7()">Cars</button>
+
+  <p>--------------------------------------------------------------------------------------</p>
+  <!-- Loop Array  -->
+  <p>Loop in Array as follows: --------------------------------</p>
+  <h4 id="id28"></h4>
+  <button onclick="fun8()">cick here to show Loop List</button>
+
+  <!-- Joining of Arrays  -->
+  <h2 id="id30"></h2>
+  <button onclick="fun10()">join</button>
+
+  <p>--------------------------------------------------------------------------------------</p>
+  <!-- Find Max and Minimun -->
+  <h3>Click below to Find Minimum value of = 40, 100, 1, 5, 25, 10 </h3>
+  <h2 id="id31"></h2>
+  <!-- <button onclick="fun11()">Min</button> -->
+
+  <p>--------------------------------------------------------------------------------------</p>
+  <!-- Sort -->
+  <h3>Click below to Sort the value of = E, B, D, C, A </h3>
+
+  <button onclick="fun12()">Sort</button>
+  <h2 id="id32"></h2>
+
+
+  <p>-------------------------------------------------------------------------------------------------------------</p>
+  <!-- Sort Literals  -->
+  <h3>Click button below to Arrange the value of in a Column = 45, 4, 9, 16, 25 </h3>
+
+  <button onclick="fun13()">Arrange in Column</button>
+  <h3 id="id33"></h3>
+
+  <!--  sum all value sin Array  -->
+  <h3>Click button below to SUM all the value in an ARRAY = 45, 4, 9, 16, 25 </h3>
+
+  <!-- <button onclick="fun14()">Sum of Array</button> -->
+  <h3 id="id34"></h3>
+
+  <p> Date -----------------------------------------------------------------------------------------------</p>
+  <h3 id="id35"></h3>
+
+
+
+
+
+  <!-- Outer Body HTML-------------------------------------------------------- -->
+  <script src="JavaScript1.js">  </script>
+
+</body>
+
+</html>

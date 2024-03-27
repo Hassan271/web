@@ -1,0 +1,13 @@
+
+*{ padding: 0; margin:0;  }
+#wrapper{ border: 5px solid; padding: 10px;  }
+#header{border: 3px solid; height: 100px; padding: 10px; background-color: #809fff;}
+#logo{ border: solid; width: 150px;height: 100px; background-color:  #4d3300; }
+#navbar{border: solid; height: 20px; background-color: rgb(227, 236, 95); margin-top: 10px;}
+#container{ border: solid red; margin-top: 10px;    }
+#container::after{content: ""; display: block; clear: both;}
+
+#left-section{ width: 25%; height: 400px; background-color: royalblue; float: left; }
+#right-section{ width: 74%; height: 400px; background-color: saddlebrown; float: right;}
+
+#footer{height: 100px; margin-top: 10px; background-color: seagreen;}
